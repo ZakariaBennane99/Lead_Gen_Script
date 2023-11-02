@@ -11,7 +11,7 @@ def checkPerson(title):
         print("Debug: Inside checkPerson function")
         print(f"Debug: Checking title: {title}")
         
-        openai.api_key = "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" # Make sure this API key is correct and valid
+        openai.api_key = "..."
 
         print("Debug: About to make OpenAI API call")
         comp = openai.ChatCompletion.create(
@@ -72,10 +72,10 @@ time.sleep(2)
 
 # Enter email and password and login
 email_box = driver.find_element(By.CSS_SELECTOR, "#email")
-email_box.send_keys("hello@drivendynamics.co.uk")
+email_box.send_keys("...")
 
 password_box = driver.find_element(By.CSS_SELECTOR, "#password")
-password_box.send_keys("Ry6ZpEVXR=%q;wi")
+password_box.send_keys("...")
 
 login_button = driver.find_element(By.CSS_SELECTOR, "#mweb-unauth-container > div > div:nth-child(3) > div > div > div:nth-child(3) > form > div:nth-child(7) > button > div")
 login_button.click()
